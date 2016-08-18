@@ -1344,7 +1344,7 @@ class GFExactTarget {
     }
 
     //Returns the url of the plugin's root folder
-    protected function get_base_url(){
+    public static function get_base_url(){
         return plugins_url(null, __FILE__);
     }
 
