@@ -121,7 +121,7 @@ class GFExactTarget {
         }
     }
 
-    function settings_link( $links, $file ) {
+    public static function settings_link( $links, $file ) {
         static $this_plugin;
         if( ! $this_plugin ) $this_plugin = plugin_basename(__FILE__);
         if ( $file == $this_plugin ) {
