@@ -137,6 +137,10 @@ class ExactTarget {
         {
             $baseUrl = 'webservice.s6.exacttarget.com';
         }
+        if($this->instance == "s7")
+        {
+            $baseUrl = 'webservice.s7.exacttarget.com';
+        }
         //return 'https://webservice.s4.exacttarget.com/etframework.wsdl';
         if($this->runscope) {
             $baseUrl = str_replace("-","--",$baseUrl);
